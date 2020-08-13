@@ -3,10 +3,19 @@
 
 ## Intention
 
-This program intends to remove strings containing 'oggy' from a list of strings.
+'oggy' is mischievous and plans tricks on cockroaches.
+Thus, this program intends to remove it from a list of strings.
 
 ## Method
 
-The code doesn't work according to the intention. Make it succeed.
+Go to no_ogg.cs file.
 
-Don't forget to update this file after fixing the code.
+Go to RemoveOggy method and update it as follows:
+
+  Remove the call to Remove method on names inside the for loop.
+  We should not update the list while iterating over it.
+  
+  Add a RemoveAll method on names. 
+  The method takes a predicate. 
+  Add condition in predicate to check if the current name starts with 'oggy' or not.
+
